@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include "data.h"
+#include <unistd.h>
+#include <fcntl.h>
+void DieWithError(char *errorMessage) ; 
+void AProposServeurHV(char *Version,char *Nom1,char* Nom2) ;
+int RechercheHV(char* NomFichier,int Reference ,struct VehiculeHV *UnRecord);
+void viderBuffer();
