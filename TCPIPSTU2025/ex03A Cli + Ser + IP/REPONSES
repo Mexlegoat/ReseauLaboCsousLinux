@@ -1,0 +1,5 @@
+1. Quel paramètre supplémentaire est ajouté à  TCPEchoServer ? 
+On ajoute le servIP, pendant la saisie on met 127.0.0.1 avant le port 1300 dans TCPEchoServer
+
+2. Ce paramètre supplémentaire est utilisé pour initialiser quelle structure de donnée ? 
+Il permet d'initialiser la structure echoServAddr pour stocker l'adresse dans l'ipv4

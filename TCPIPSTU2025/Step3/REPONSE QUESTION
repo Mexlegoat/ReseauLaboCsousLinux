@@ -1,0 +1,5 @@
+1. Expliquez comment vous utilisez ce paramètre dans TCPEchoServer 
+- On remplace la condition if (argc != 2) à if (argc != 3)
+- On change le placement du port en argv[2]
+- On ajoute une variable char * servIP, et ensuite l'initialise à servIP = argv[1];
+- On n'oublie pas de changer la structure echoServAddr.sin_addr.s_addr à inet_addr(servIP) à la place de n'importe quelle ip
