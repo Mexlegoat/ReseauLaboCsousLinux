@@ -1,0 +1,20 @@
+Qu’est ce que localhost ?
+- Le localhost est un alias qui fait référence à l'adresse de loopback (127.0.0.1 Ipv4) et  (::1 en ipv6)
+
+c'est d'ailleurs le deux qu'on voit en utilisant la fonction/etc/Hosts : 
+
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+
+Pourquoi le programme TCPEchoServer ne fonctionne pas quand on le lance avec le paramètre localhost ?
+
+car on passe localhost en tant qu'argument et que notre programme ne permet pas de gérer la résolution des alias
+et nous retourne donc l'adresse 255.255.255.255 : 1300. 
+Qui n'est ducoup pas l'adresse de localHost
+Getaddrinfo pourrait nous permettre de résoudre ce soucis.
+
+
+Quelle est la fonction du fichier /etc/Hosts ?
+- Il est l'ancetre du DNS
+- Le fichier /etc/hosts est un fichier de configuration utilisé pour mapper des noms d’hôtes (hostnames) à des adresses IP.

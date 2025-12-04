@@ -1,0 +1,30 @@
+- Expliquez le rôle des fonctions suivantes :
+   > getpeername ?
+
+int getpeername(int sockfd, struct sockaddr addr, socklen_taddrlen);
+sockfd socket du service obtenur
+addr adresse de la structure qui va recevoir l'adresse réseau
+addrlen est la taille de cette structure
+
+
+obtenir les informations (adresse IP + port) sur le client connecté.
+
+
+  > getnameinfo ?
+
+int getnameinfo(const struct sockaddr addr, socklen_t addrlen, charhost, socklen_t hostlen, char *serv, socklen_t servlen, int flags);
+
+Les différents champs sont 
+
+addrqui est un pointeur d'une structure de l'adresse a initialiser
+addrlen taille de cette structure
+host adresse ou on va mettre l'ip trouver
+hostlen taill de la chaine de caractere
+serv adresse de la chaine de caract qui va recuprer le nomserv ou numport
+
+servlen taille de cette chaine
+flags 
+-NI_NUMERICSERV si on veut obtenir le numéro de port et non le nom du service
+-NI_NUMERICHOST si on veut obtenir l’adresse IP et non le nom de l’hôte
+
+Elle permet de récupérer les adresses ou le port c'est-à-dire de retrouver les informations « lisibles par l’être humain »
