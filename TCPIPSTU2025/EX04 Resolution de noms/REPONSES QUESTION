@@ -1,0 +1,16 @@
+Expliquez le rôle de getaddrinfo ? 
+
+-> Il sert a résoudre un nom d'hote ou un numéro de port dans un format que l'on précisera
+
+result = getaddrinfo("GranY", NULL, NULL, &addr);
+Il va ducoup analyser l'adresse dont l'alias est mellissam et placer toute les information dans la structure Addr, si cela fonction elle retourne 0 
+
+
+
+Avec quels paramètres pour getaddrinfo, la résolution de localhost ou de votre nom fonctionne– t-elle ?
+
+result = getaddrinfo("mellissam", NULL, NULL, &addr);
+result = getaddrinfo("localhost", NULL, NULL, &addr);
+int getaddrinfo(const char *restrict __name,  const char *restrict __service, const addrinfo *restrict __req ,  addrinfo  restrict __pai )
+C'est avec le premier paramètre qui prend ducoup le nom 
+192.168.239.128

@@ -1,7 +1,7 @@
 Qu’est ce que localhost ?
 - Le localhost est un alias qui fait référence à l'adresse de loopback (127.0.0.1 Ipv4) et  (::1 en ipv6)
 
-c'est d'ailleurs le deux qu'on voit en utilisant la fonction/etc/Hosts : 
+c'est d'ailleurs les deux qu'on voit en utilisant la fonction/etc/Hosts : 
 
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
@@ -18,3 +18,6 @@ Getaddrinfo pourrait nous permettre de résoudre ce soucis.
 Quelle est la fonction du fichier /etc/Hosts ?
 - Il est l'ancetre du DNS
 - Le fichier /etc/hosts est un fichier de configuration utilisé pour mapper des noms d’hôtes (hostnames) à des adresses IP.
+NOTES:
+Pour ajouter l'adresse et le nom dans /etc/hosts il faut déja utiliser la commande ifconfig pour avoir l'adresse
+Ensuite il faut faire sudo gedit /etc/hosts pour modifier le fichier et y placer dessus le nom et l'adresse

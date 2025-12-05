@@ -1,0 +1,3 @@
+Expliquez pourquoi on peut maintenant utiliser le mot localhost ?
+Car on utilise getaddrinfo pour récuperer les informations sur l'alias recu en argument (localhost)
+Cela fonctionne également avec toute les résolution de domaines dans le fichier /etc/hosts 
